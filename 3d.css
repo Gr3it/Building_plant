@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .img-3d-container {
   display: flex;
   flex-direction: column;
@@ -23,7 +29,19 @@
   position: absolute;
   border-collapse: collapse;
   border: 5px solid black;
-  height: 120px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.room > * {
+  width: 4rem;
 }
 
 .corridor {
@@ -33,8 +51,8 @@
   border-collapse: collapse;
   border-left: 5px solid black;
   border-right: 5px solid black;
-  height: 50px;
-  width: 800px;
+  height: 60px;
+  width: 810px;
 }
 
 .stairs {
@@ -44,8 +62,8 @@
   left: 475px;
   border-collapse: collapse;
   border-top: 5px solid black;
-  height: 120px;
-  width: 95px;
+  height: 130px;
+  width: 105px;
 }
 
 .elevator1 {
@@ -53,8 +71,8 @@
   position: absolute;
   top: 10px;
   right: 0;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-collapse: collapse;
   border: 5px solid black;
 }
@@ -64,54 +82,52 @@
   position: absolute;
   top: 60px;
   right: 0;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-collapse: collapse;
   border: 5px solid black;
 }
 
-/* suite */
-
 .suite1 {
   top: 0;
   left: 0;
-  width: 230px;
+  width: 240px;
 }
 
 .suite2 {
   top: 0;
   left: 235px;
-  width: 230px;
+  width: 240px;
 }
 
 .suite3 {
   top: 0;
-  left: 565px;
+  left: 575px;
   width: 235px;
 }
 
 .suite4 {
   top: 180px;
   left: 0;
-  width: 195px;
+  width: 205px;
 }
 
 .suite5 {
   top: 180px;
   left: 200px;
-  width: 195px;
+  width: 205px;
 }
 
 .suite6 {
   top: 180px;
   left: 400px;
-  width: 195px;
+  width: 205px;
 }
 
 .suite7 {
   top: 180px;
   left: 600px;
-  width: 200px;
+  width: 210px;
 }
 
 /* lusso */
@@ -123,69 +139,69 @@
 }
 .lusso2 {
   top: 0px;
-  left: 120px;
+  left: 110px;
   width: 115px;
 }
 .lusso3 {
   top: 0px;
-  left: 240px;
-  width: 110px;
+  left: 220px;
+  width: 115px;
 }
 .lusso4 {
   top: 0px;
-  left: 355px;
-  width: 110px;
+  left: 330px;
+  width: 145px;
 }
 
 .lusso5 {
   top: 0px;
-  left: 565px;
+  left: 575px;
   width: 115px;
 }
 
 .lusso6 {
   top: 0px;
   left: 685px;
-  width: 115px;
+  width: 125px;
 }
 
 .lusso7 {
   top: 180px;
   left: 0px;
-  width: 110px;
+  width: 115px;
 }
 
 .lusso8 {
   top: 180px;
-  left: 115px;
-  width: 110px;
+  left: 110px;
+  width: 115px;
 }
 
 .lusso9 {
   top: 180px;
-  left: 230px;
-  width: 110px;
+  left: 220px;
+  width: 115px;
 }
 
 .lusso10 {
   top: 180px;
-  left: 345px;
-  width: 110px;
+  left: 330px;
+  width: 115px;
 }
 .lusso11 {
   top: 180px;
-  left: 460px;
-  width: 110px;
+  left: 440px;
+  width: 115px;
 }
 .lusso12 {
   top: 180px;
-  left: 575px;
-  width: 110px;
+  left: 550px;
+  width: 115px;
 }
 .lusso13 {
   top: 180px;
-  left: 690px;
-  width: 110px;
+  left: 660px;
+  width: 150px;
 }
 
 /* basic */
@@ -193,116 +209,114 @@
 .basic1 {
   top: 0px;
   left: 0px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic2 {
   top: 0px;
   left: 80px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic3 {
   top: 0px;
   left: 160px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic4 {
   top: 0px;
   left: 240px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic5 {
   top: 0px;
   left: 320px;
-  width: 70px;
+  width: 80px;
 }
 
 .basic6 {
   top: 0px;
   left: 395px;
-  width: 70px;
+  width: 80px;
 }
 .basic7 {
   top: 0px;
-  left: 565px;
-  width: 75px;
+  left: 575px;
+  width: 80px;
 }
 
 .basic8 {
   top: 0px;
-  left: 645px;
-  width: 75px;
+  left: 650px;
+  width: 80px;
 }
 
 .basic9 {
   top: 0px;
   left: 725px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic10 {
   top: 180px;
   left: 0px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic11 {
   top: 180px;
   left: 80px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic12 {
   top: 180px;
   left: 160px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic13 {
   top: 180px;
   left: 240px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic14 {
   top: 180px;
   left: 320px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic15 {
   top: 180px;
   left: 400px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic16 {
   top: 180px;
   left: 480px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic17 {
   top: 180px;
   left: 560px;
-  width: 75px;
+  width: 85px;
 }
 
 .basic18 {
   top: 180px;
   left: 640px;
-  width: 75px;
-  background-color: #845ec2;
+  width: 85px;
 }
 
 .basic19 {
   top: 180px;
   left: 720px;
-  width: 80px;
-  background-color: #ff6f91;
+  width: 90px;
 }
 
 /* floor */
@@ -315,45 +329,7 @@
   margin-top: -5rem;
 }
 
-.suite1:hover,
-.suite2:hover,
-.suite3:hover,
-.suite4:hover,
-.suite5:hover,
-.suite6:hover,
-.suite7:hover,
-.lusso1:hover,
-.lusso2:hover,
-.lusso3:hover,
-.lusso4:hover,
-.lusso5:hover,
-.lusso6:hover,
-.lusso7:hover,
-.lusso8:hover,
-.lusso9:hover,
-.lusso10:hover,
-.lusso11:hover,
-.lusso12:hover,
-.lusso13:hover,
-.basic1:hover,
-.basic2:hover,
-.basic3:hover,
-.basic4:hover,
-.basic5:hover,
-.basic6:hover,
-.basic7:hover,
-.basic8:hover,
-.basic9:hover,
-.basic10:hover,
-.basic11:hover,
-.basic12:hover,
-.basic13:hover,
-.basic14:hover,
-.basic15:hover,
-.basic16:hover,
-.basic17:hover,
-.basic18:hover,
-.basic19:hover {
+.room:hover:not(.occupied) {
   background-color: #0081cf;
   cursor: pointer;
 }
@@ -362,7 +338,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 7.5rem;
+  gap: 14rem;
   right: 6rem;
 }
 
@@ -373,7 +349,7 @@
   left: 6rem;
   border: 5px solid black;
   height: 300px;
-  width: 300px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -388,7 +364,8 @@
 
 .legend-row > h3 {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 .legend-square-elevator {
@@ -424,4 +401,44 @@
   border: 5px solid black;
   height: 25px;
   width: 25px;
+}
+
+.occupied {
+  background-color: #ff6f91;
+  cursor: default;
+}
+
+.selected {
+  background-color: #845ec2;
+}
+
+@media (max-width: 1500px) {
+  .img-3d-container {
+    margin-bottom: -15rem;
+    transform: scale(0.7);
+  }
+
+
+  .img-3d-legend {
+    position: absolute;
+    padding: 1rem;
+    margin-top: 25px;
+    left: 50%;
+    border: 5px solid black;
+    height: 100px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px #888888;
+    transform: translate(-50%, -25rem);
+  }
+
+  .img-3d-side {
+    display: none;
+  }
+}
+ 
+img{
+  margin-left:-1rem;
 }
