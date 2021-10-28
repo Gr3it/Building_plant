@@ -1,7 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .img-3d-container {
@@ -20,7 +35,7 @@
   height: 310px;
   width: 810px;
 
-  box-shadow: 0px 0px 10px #888888;
+  box-shadow: 0px 0px 5px #888888;
 
   transform: rotate3d(1, 0, 0, 50deg);
 }
@@ -335,25 +350,20 @@
 }
 
 .img-3d-side {
-  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 14rem;
-  right: 6rem;
 }
 
 .img-3d-legend {
-  position: absolute;
   padding: 1rem;
-  margin-top: 25px;
-  left: 6rem;
-  border: 5px solid black;
+  border: 3px solid black;
   height: 300px;
-  width: 250px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  box-shadow: 0px 0px 10px #888888;
+  box-shadow: 0px 0px 5px #888888;
 }
 
 .legend-row {
@@ -364,41 +374,41 @@
 
 .legend-row > h3 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0;
 }
 
 .legend-square-elevator {
   background-color: #ffc75f;
-  border: 5px solid black;
+  border: 3px solid black;
   height: 25px;
   width: 25px;
 }
 
 .legend-square-stairs {
   background-color: #008e9b;
-  border: 5px solid black;
+  border: 3px solid black;
   height: 25px;
   width: 25px;
 }
 
 .legend-square-occupied {
   background-color: #ff6f91;
-  border: 5px solid black;
+  border: 3px solid black;
   height: 25px;
   width: 25px;
 }
 
 .legend-square-available {
   background-color: #fff;
-  border: 5px solid black;
+  border: 3px solid black;
   height: 25px;
   width: 25px;
 }
 
 .legend-square-selected {
   background-color: #845ec2;
-  border: 5px solid black;
+  border: 3px solid black;
   height: 25px;
   width: 25px;
 }
@@ -412,33 +422,25 @@
   background-color: #845ec2;
 }
 
-@media (max-width: 1500px) {
-  .img-3d-container {
-    margin-bottom: -15rem;
-    transform: scale(0.7);
-  }
+.title {
+  font-size: 4rem;
+}
 
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 
-  .img-3d-legend {
-    position: absolute;
-    padding: 1rem;
-    margin-top: 25px;
-    left: 50%;
-    border: 5px solid black;
-    height: 100px;
-    width: 800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    box-shadow: 0px 0px 10px #888888;
-    transform: translate(-50%, -25rem);
-  }
-
-  .img-3d-side {
-    display: none;
+@media (max-width: 1550px) {
+  .page-container > * {
+    transform: scale(0.75);
+    margin: 0 -5rem;
   }
 }
- 
-img{
-  margin-left:-1rem;
+
+@media (max-width: 1250px) {
+  .page-container > * {
+    transform: scale(0.5);
+    margin: 0 -20rem;
+  }
 }
