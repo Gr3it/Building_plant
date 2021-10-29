@@ -416,6 +416,7 @@ body {
 .occupied {
   background-color: #ff6f91;
   cursor: default;
+  cursor: not-allowed;
 }
 
 .selected {
